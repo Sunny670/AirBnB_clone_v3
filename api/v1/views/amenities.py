@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Contains the amenities view for the API.'''
+'''Contains the amenities view for API.'''
 from flask import jsonify, request
 from werkzeug.exceptions import NotFound, MethodNotAllowed, BadRequest
 

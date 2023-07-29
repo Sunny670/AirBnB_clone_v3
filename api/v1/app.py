@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Contains a Flask web application API.
+'''Contains  Flask web application API.
 '''
 import os
 from flask import Flask, jsonify
@@ -20,7 +20,7 @@ CORS(app, resources={'/*': {'origins': app_host}})
 
 @app.teardown_appcontext
 def teardown_flask(exception):
-    '''The Flask app/request context end event listener.'''
+    '''The Flask app context end event listener.'''
     # print(exception)
     storage.close()
 
